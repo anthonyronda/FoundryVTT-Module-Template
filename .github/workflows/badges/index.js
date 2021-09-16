@@ -35,7 +35,7 @@ const packageInfo = packageManifest;
 const badgeData = getBadge(packageInfo);
 
 fs.writeFileSync(
-  path.join(__dirname, "out", `${package}.json`),
+  path.join(__dirname, "out", `badge.json`),
   JSON.stringify(badgeData)
 );
 
